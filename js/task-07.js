@@ -4,7 +4,7 @@ const input = document.querySelector('#font-size-control');
 const textEl = document.querySelector('#text');
 
 
-input.addEventListener('click', onControlSizeText)
+input.addEventListener('mousemove', onControlSizeText)
 // () => {
 //     console.log('rgghj')  
 // }

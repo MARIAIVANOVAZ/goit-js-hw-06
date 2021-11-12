@@ -18,7 +18,7 @@ const images = [
 const gallery = document.querySelector('.gallery');
 gallery.classList.add('gallery')
 
-images.forEach(image => {
+images.map(image => {
 gallery.insertAdjacentHTML("beforeend", `<li><img src="${image.url}" alt="${image.alt}" class ="image"></li>`);
 })
 // gallery.setAttribute("style",  "display: flex; justify-content: space-between; list-style: none");

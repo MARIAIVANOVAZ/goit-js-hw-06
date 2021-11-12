@@ -29,7 +29,7 @@ const form = document.querySelector('.login-form');
      event.preventDefault();
 
      const formElements = event.currentTarget.elements;
-    console.dir(formElements);
+    // console.dir(formElements);
     
      const mail = formElements.email.value;
      const password = formElements.password.value;
@@ -38,10 +38,12 @@ const form = document.querySelector('.login-form');
          mail,
          password,
         };
-        console.log(formData);
+        // console.log(formData);
      
         if(formElements.email.value === "" || formElements.password.value === "") {
             return alert('Please fill all fields!');
+        } else {
+            console.log(formData);
         }
         
    
