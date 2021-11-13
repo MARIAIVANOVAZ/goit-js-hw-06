@@ -18,13 +18,14 @@ const images = [
 const gallery = document.querySelector('.gallery');
 gallery.classList.add('gallery')
 
-images.map(image => {
-gallery.insertAdjacentHTML("beforeend", `<li><img src="${image.url}" alt="${image.alt}" class ="image"></li>`);
-})
+const createGallery = images.map(image => 
+ `<li><img src="${image.url}" alt="${image.alt}" class ="image"></li>`
+).join("");
 // gallery.setAttribute("style",  "display: flex; justify-content: space-between; list-style: none");
+gallery.insertAdjacentHTML("beforeend", createGallery);
 
+console.log(gallery);
 
-console.log(images);
 
 // const gallery = document.querySelector('.gallery');
 
